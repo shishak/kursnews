@@ -4,7 +4,255 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
 	<title>Lifenews</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style>
+		
+		body {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-height: 100vh;
+	max-width: 1124px;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	color: #999999;
+}
+.main {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.content {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+@media only screen and (min-width: 700px) {
+	.main {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+	}
+	.sidebar {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 13em;
+		flex: 0 0 13em;
+	}
+}
+
+
+
+
+/* Some base styles to make everything look better */
+
+html {
+	font-size: 1.5em;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	line-height: 1.2;
+}
+a {
+	text-decoration: none;
+	color: #35606E;
+}
+a:hover {
+	color: #881f1f;
+}
+
+
+
+
+
+.header a {
+	font-size: 14px;
+}
+.footer a {
+	font-size: 12px;
+}
+header {
+	padding-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+header img {
+	float: left;
+}
+header ul li {
+	display: inline;
+	margin-right: 10px;
+}
+header ul {	
+	    margin: 0;
+	    margin-top: -5px;
+	    text-align: center;
+	    
+	    -webkit-padding-start: 0;
+}
+
+header input {
+	border: 0;
+	background: #fafafa;
+	padding: 7px;
+	border-radius: 3px;
+	float: right;
+	height: 20px;
+}
+
+
+
+
+
+
+
+.feed {
+	margin-top: 30px;
+}
+.single-main {
+	background: #fafafa;
+	padding-bottom: 30px;
+	margin-right: 10px;
+}
+.img-single-main {
+	float: left;
+	margin-right: 20px;
+}
+
+.img-single-main img {
+	width: 200px;
+}
+
+.right-single-main {}
+.left-title {
+	float: left;
+	font-size: 12px;
+	margin-top: 15px;
+	opacity: .5;
+}
+.time {
+	float: right;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-right: 15px;
+	opacity: .5;
+}
+.big-title {
+	padding-top: 40px;
+	font-size: 26px;
+}
+.second-title {
+	margin-top: 10px;
+	font-size: 12px;
+}
+.sidebar-box {
+	height: 100px;
+	padding-right: 20px;
+}
+.sidebar-img-box {
+	float: left;
+	margin-right: 10px;
+}
+.big-title-box {
+	font-size: 17px;
+}
+.second-title-box {
+	font-size: 10px;
+	margin-top: 20px;
+}
+.feed-box {
+	margin-bottom: 20px;
+}
+.feed-title {
+	font-size: 20px;
+	margin-right: 10px;
+}
+.feed-title a {
+	margin-left: 10px;
+}
+
+.feed-time {
+	float: left;
+	font-size: 16px;
+	margin-top: 2px;
+}
+.feed-source {
+	font-size: 16px;
+	padding-top: 3px;
+}
+footer ul li {
+	display: inline;
+	margin-right: 10px;
+	 
+}
+
+footer ul {
+	 -webkit-padding-start: 0;
+	 margin: 10px;
+}
+
+.banners {
+	margin-top: 50px;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 950px) {
+
+		.big-title {
+		font-size: 16px;
+	}
+	
+	header ul {	
+	    margin: 0;
+	    margin-top: 25px;
+	    text-align: left;
+	    width: 100%;
+	}
+	.feed-title a {
+		font-size: 14px;
+	}
+	.feed-time, .feed-source {
+		font-size: 12px;
+	}
+	.feed-title {
+		line-height: 14px;
+	}
+	.single-main {
+		margin-right: 0;
+	}
+	.img-single-main img {
+	width: 120px;
+	}
+	.second-title {
+		margin-left: 10px;
+	}
+	.banners img {
+		width: 100%;
+	}
+}
+		
+	</style>
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -346,5 +594,14 @@
 			<li style="font-size: 12px;">2017 Lifenews</li>
 		</ul>
 	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Roboto', 'Roboto Condensed']
+    }
+  });
+</script>
 </body>
 </html>
