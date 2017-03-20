@@ -130,6 +130,11 @@ header input {
 	float: left;
 	margin-right: 20px;
 }
+
+.img-single-main img {
+	width: 200px;
+}
+
 .right-single-main {}
 .left-title {
 	float: left;
@@ -207,5 +212,16 @@ footer ul li {
 	    text-align: left;
 	    width: 100%;
 	}
-
+	.feed-title a {
+		font-size: 14px;
+	}
+	.feed-time, .feed-source {
+		font-size: 12px;
+	}
+	.feed-title {
+		line-height: 14px;
+	}
+	.single-main {
+		margin-right: 0;
+	}
 }
