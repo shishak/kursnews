@@ -224,4 +224,7 @@ footer ul li {
 	.single-main {
 		margin-right: 0;
 	}
+	.img-single-main img {
+	width: 150px;
+	}
 }
