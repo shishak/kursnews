@@ -203,7 +203,10 @@ footer ul {
 	 margin: 10px;
 }
 
-
+.banners {
+	margin-top: 50px;
+	text-align: center;
+}
 
 
 @media only screen and (max-width: 950px) {
@@ -235,5 +238,8 @@ footer ul {
 	}
 	.second-title {
 		margin-left: 10px;
+	}
+	.banners img {
+		width: 100%;
 	}
 }
