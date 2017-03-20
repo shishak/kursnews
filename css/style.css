@@ -195,6 +195,12 @@ header input {
 footer ul li {
 	display: inline;
 	margin-right: 10px;
+	 
+}
+
+footer ul {
+	 -webkit-padding-start: 0;
+	 margin: 10px;
 }
 
 
